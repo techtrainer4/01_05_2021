@@ -1,0 +1,63 @@
+pizza
+print(10 / 2) ; print(2 + 2) ; print("Hello") ; print("$$$sdhfdsfdsh")
+print("Jane's cat","Bye-Bye")
+
+x = "5"
+x = int(x)
+print(x)
+y = x + 1
+z = y * 2
+print(x,y,z)
+
+Name = "Charlie"
+LastName = "Brown"
+Age = 8
+print(Name + " " + LastName + " is " + str(Age) + " years old.")
+#Charlie Brown is 8 years old.
+print("{} {} is {} years old.".format(Name,LastName,Age))
+
+name = "Mary"
+pet = "dog"
+pet = "cat"
+person_age = 12
+pet_age = 6
+pet_name = "Fido"
+
+#Mary is 12 years old and has a 6 year old dog named Fido
+
+print("{} is {} years old and has a {} year old {} named {}.".format(name,person_age,pet_age,pet,pet_name))
+
+def AddOne(x):
+  y = x + 1
+  return y 
+
+print(AddOne(13))
+
+def square_me(y):
+  return y ** 2
+
+print(square_me(5)) 
+
+bill = 55.66 #float = floating point decimal = decimal 
+no_ppl = 5
+share = bill / no_ppl
+print(share)  
+print("Each person owes ${:.2f}.".format(share))
+
+def BillCalc():
+  Bill = input("How much was your bill?")
+  Bill = float(Bill)
+  Ppl = input("How many people are splitting this?")
+  Ppl = int(Ppl)
+  Share = Bill / Ppl
+  return "Each person owes ${:.2f}.".format(Share)
+
+print(BillCalc())
+
+def email_assigner():
+  fname = input("What is your first name?")
+  lname = input("What is your last name?")
+  cname = "@something.com"
+  return "{}.{}{}".format(fname,lname,cname)
+
+print(email_assigner())
