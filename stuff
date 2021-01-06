@@ -61,3 +61,32 @@ def email_assigner():
   return "{}.{}{}".format(fname,lname,cname)
 
 print(email_assigner())
+#Conditionals
+x = -5
+if x > 0:
+  print("This is a positive number.")
+elif x == 0:
+  print("This is zero")
+else:
+  print("This is a negative number.")
+
+food = "pizza"
+if food == "pizza":
+  print("I like pizza")
+else:
+  print("I don't like pizza.")
+
+marry = input("Will you marry me?")
+sure = input("Are you sure?")
+
+marry = marry.lower()
+sure = sure.lower() #.title() #.upper()
+
+
+affirmative = ["yes","si","yeah","yup","yea","of course","definitely"]
+print(affirmative[1])
+
+if marry in affirmative:
+  print("Awesome!")
+else:
+  print("Bummer.")
